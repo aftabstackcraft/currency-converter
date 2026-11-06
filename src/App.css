@@ -1,0 +1,85 @@
+.converter {
+  width: min(100% - 32px, 460px);
+  margin: 0 auto;
+  padding: 42px 28px 30px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  background: rgba(255, 255, 235, 0.55);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+  transform: translateY(8vh);
+}
+.converter h1 {
+  margin: 0;
+  text-align: center;
+  font-size: clamp(1.6rem, 5vw, 2rem);
+}
+.intro {
+  margin: 10px 0 28px;
+  color: #45452f;
+  text-align: center;
+  line-height: 1.5;
+}
+.field {
+  display: flex;
+  min-width: 0;
+  flex: 1;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: 600;
+}
+.field span { font-size: 0.95rem; }
+.field input, .field select {
+  width: 100%;
+  min-height: 44px;
+  padding: 9px 11px;
+  border: 1px solid #77775c;
+  border-radius: 5px;
+  background: #fff;
+  color: #111;
+}
+.currency-fields {
+  display: flex;
+  align-items: end;
+  gap: 12px;
+  margin-top: 20px;
+}
+.convert-arrow {
+  padding-bottom: 10px;
+  color: #55553b;
+  font-size: 1.35rem;
+}
+.result {
+  margin-top: 28px;
+  padding: 18px;
+  border: 1px solid #b5b56e;
+  border-radius: 7px;
+  background: #f5f3bd;
+  text-align: center;
+}
+.result-label {
+  margin: 0 0 8px;
+  color: #55553b;
+  font-size: 0.9rem;
+}
+.result-value {
+  margin: 0;
+  font-size: clamp(1.8rem, 7vw, 2.4rem);
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+.result-value span { font-size: 1rem; }
+.rate-note {
+  margin: 16px 0 0;
+  color: #66664c;
+  font-size: 0.78rem;
+  text-align: center;
+}
+@media (max-width: 420px) {
+  .converter {
+    padding: 30px 18px 24px;
+    transform: none;
+    margin-top: 30px;
+  }
+  .currency-fields { gap: 8px; }
+  .convert-arrow { font-size: 1.1rem; }
+}
